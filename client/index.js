@@ -33,7 +33,7 @@ function validation(type, callback){
 
 var ui = fastn('div', { class: 'content' },
     fastn('span', { class: 'madeBy' }, 'Made by', fastn('a', { href: 'https://korynunn.com' }, 'Kory Nunn')),
-    fastn('h1', { class: 'pageHeading' }, 'An evolving no-frills base project so i can build stuff quickly'),
+    fastn('h1', { class: 'pageHeading' }, 'An evolving no-frills base project so I can build stuff quickly'),
     fastn('section',
         fastn('h2', 'Intended for quick prototypes. Not a "best practice" example.')
     ),
