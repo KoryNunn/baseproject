@@ -1,0 +1,7 @@
+{
+    "name": "baseproject",
+    "alias": "baseproject.korynunn.com",
+    "env": {
+        "NODE_ENV":"production"
+    }
+}

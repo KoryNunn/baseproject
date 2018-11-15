@@ -1,0 +1,1 @@
+module.exports = require('fastn')(require('fastn/domComponents')({}));

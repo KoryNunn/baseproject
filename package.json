@@ -1,0 +1,38 @@
+{
+  "name": "baseproject",
+  "version": "1.0.0",
+  "main": "node/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "rm ./static/index.js.gz; watchify ./client/index.js -o ./static/index.js",
+    "build": "browserify -t [ babelify --plugins [ @babel/plugin-proposal-object-rest-spread ] ] -g [ uglifyify -m ] ./client/index.js > ./static/index.js && gzip -fk ./static/index.js",
+    "start": "node server"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "babelify": "^10.0.0",
+    "blazon": "^2.1.0",
+    "browserify": "^16.2.3",
+    "config": "^2.0.1",
+    "dion": "^2.0.0",
+    "fastn": "^2.11.4",
+    "righto": "^5.0.0",
+    "sea-lion": "^2.0.2",
+    "uglifyify": "^5.0.1"
+  },
+  "devDependencies": {
+    "watchify": "^3.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KoryNunn/baseproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KoryNunn/baseproject/issues"
+  },
+  "homepage": "https://github.com/KoryNunn/baseproject#readme",
+  "description": ""
+}
